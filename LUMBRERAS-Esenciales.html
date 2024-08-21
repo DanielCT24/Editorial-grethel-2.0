@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+
 
     <script>
         // JavaScript para cambiar el estilo del encabezado al hacer scroll
@@ -90,20 +92,33 @@
         <div id="searchResults"></div>
 
           <script>
-              document.addEventListener('DOMContentLoaded', function() {
+             document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchBar');
     const productCards = document.querySelectorAll('.card__trust');
     let products = [];
 
     // Recolectar los datos de los productos
     productCards.forEach(card => {
-        products.push({
-            id: card.getAttribute('data-product-id'),
-            name: card.querySelector('h2')?.textContent.trim() || '', // Validar que el elemento exista
-            price: card.querySelector('.precio')?.textContent.trim() || '', // Validar que el elemento exista
-            element: card
-        });
+        const productName = card.querySelector('h2')?.textContent.trim() || '';
+        const productPrice = card.querySelector('.precio')?.textContent.trim() || '';
+
+        if (productName) { // Asegurarnos de que el producto tiene un nombre válido
+            products.push({
+                id: card.getAttribute('data-product-id'),
+                name: productName,
+                price: productPrice,
+                element: card
+            });
+        }
     });
+
+    // Verificar que los productos fueron recolectados correctamente
+    console.log('Productos recolectados:', products);
+
+    if (products.length === 0) {
+        console.error('No se encontraron productos. Verifica la estructura HTML.');
+        return;
+    }
 
     // Configurar Fuse.js
     const fuse = new Fuse(products, {
@@ -114,7 +129,7 @@
 
     // Manejar la búsqueda
     searchInput.addEventListener('input', function() {
-        const query = searchInput.value.trim();
+        const query = searchInput.value.trim().toLowerCase(); // Convertimos la consulta a minúsculas
 
         // Mostrar todos los productos si no hay una consulta
         if (!query) {
@@ -129,12 +144,15 @@
         productCards.forEach(card => card.style.display = 'none');
 
         // Mostrar solo los productos que coinciden
-        results.forEach(result => {
-            result.item.element.style.display = 'block';
-        });
+        if (results.length > 0) {
+            results.forEach(result => {
+                result.item.element.style.display = 'block';
+            });
+        } else {
+            console.log('No se encontraron coincidencias para:', query);
+        }
     });
 });
-
           </script>
           <!---------------------------- TERMINA SERCH BAR--------------------------- -->
   
