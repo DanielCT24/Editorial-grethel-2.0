@@ -30,6 +30,7 @@ header{
     height: 100px;
     position: fixed;
     z-index: 100;
+    background-color: #f3adff;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
