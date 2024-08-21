@@ -125,6 +125,26 @@ header.scroll {
 }
 
 
+/* ESTILO INICIO DE SESIÓN */
+
+.btn__login {
+    display: inline-block;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.login-icon {
+    width: 45px; /* Ajusta el tamaño según sea necesario */
+    height: 45px;
+    vertical-align: middle;
+    transition: transform 300ms;
+}
+
+.btn__login:hover .login-icon {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+
 
 /* ESTILOS GENERALES CARDS */
 
