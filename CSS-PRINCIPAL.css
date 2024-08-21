@@ -906,3 +906,44 @@ header.scroll {
     }
 }
 
+/*----------------------------- SEACH BAR--------------------- */
+
+
+/* Estilo para el contenedor de la barra de búsqueda */
+#searchBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Estilo para la barra de búsqueda */
+#searchBar {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #6200ea;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación al hacer foco en la barra */
+#searchBar:focus {
+    border-color: #3700b3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* Estilo al escribir en la barra */
+#searchBar::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Efecto al pasar el cursor sobre la barra */
+#searchBar:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: #3700b3;
+}
