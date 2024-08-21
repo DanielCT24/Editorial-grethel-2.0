@@ -88,6 +88,54 @@
             <input type="text" id="searchBar" class="search-input" placeholder="Buscar productos...">
         </div>
         <div id="searchResults"></div>
+
+          <script>
+              document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchBar');
+    const productCards = document.querySelectorAll('.card__trust');
+    let products = [];
+
+    // Recolectar los datos de los productos
+    productCards.forEach(card => {
+        products.push({
+            id: card.getAttribute('data-product-id'),
+            name: card.querySelector('h2')?.textContent.trim() || '', // Validar que el elemento exista
+            price: card.querySelector('.precio')?.textContent.trim() || '', // Validar que el elemento exista
+            element: card
+        });
+    });
+
+    // Configurar Fuse.js
+    const fuse = new Fuse(products, {
+        keys: ['name'],
+        threshold: 0.4,
+        distance: 100
+    });
+
+    // Manejar la búsqueda
+    searchInput.addEventListener('input', function() {
+        const query = searchInput.value.trim();
+
+        // Mostrar todos los productos si no hay una consulta
+        if (!query) {
+            productCards.forEach(card => card.style.display = 'block');
+            return;
+        }
+
+        // Obtener los resultados de la búsqueda con Fuse.js
+        const results = fuse.search(query);
+
+        // Ocultar todos los productos
+        productCards.forEach(card => card.style.display = 'none');
+
+        // Mostrar solo los productos que coinciden
+        results.forEach(result => {
+            result.item.element.style.display = 'block';
+        });
+    });
+});
+
+          </script>
           <!---------------------------- TERMINA SERCH BAR--------------------------- -->
   
 <!--------------------------------------- PRODUCTOS ------------------------------------->
