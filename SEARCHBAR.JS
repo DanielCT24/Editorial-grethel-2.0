@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Mostrar solo los productos que coinciden
         productCards.forEach(card => card.style.display = 'none'); // Ocultar todos los productos
-        results.forEach(result => result.item.element.style.display = 'block'); // Mostrar los productos coincidentes
+
+        results.forEach(result => {
+            result.item.element.style.display = 'block'; // Mostrar los productos coincidentes
+        });
     });
 });
-
