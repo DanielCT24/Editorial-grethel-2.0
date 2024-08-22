@@ -485,6 +485,7 @@ main {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     background-color: rgba(173, 112, 219, 0.584); /* Moderate light purple */
+    border-radius: 2px;
 }
 
 .caja__trasera div {
@@ -520,11 +521,13 @@ main {
     color: #ffffffaf; /* Softer purple */
     outline: none;
     transition: all 300ms;
+    border-radius: 2px;
 }
 
 .caja__trasera button:hover {
     background: #B39DDB; /* Softer purple */
     color: #FFFFFF; /* White text for contrast */
+    border-radius: 2px;
 }
 
 /* Formularios */
@@ -564,6 +567,7 @@ main {
     background: #F9F9F9; /* Light background for inputs */
     font-size: 16px;
     outline: none;
+    border-radius: 2px;
 }
 
 .contenedor__login-register form button {
@@ -576,6 +580,7 @@ main {
     cursor: pointer;
     color: #FFFFFF; /* White text for contrast */
     outline: none;
+    border-radius: 2px;
 }
 
 .formulario__login {
