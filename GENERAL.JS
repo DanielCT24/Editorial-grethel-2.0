@@ -16,11 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchBar');
     const productCards = document.querySelectorAll('.card__trust');
@@ -61,6 +56,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         results.forEach(result => {
             result.item.element.style.display = 'block'; // Mostrar los productos coincidentes
+
+
         });
     });
 });
+
+    // RESPONSIVE WEB 
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('.menu nav');
+        
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    });
+
+
+
+
