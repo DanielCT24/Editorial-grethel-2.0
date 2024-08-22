@@ -7,7 +7,33 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins'; 
+ 
 }
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body * {
+    animation: fadeIn 800ms ease-in-out both;
+
+}
+
+
+img, button, a, .button {
+    animation-delay: 0.9s;
+}
+
+
 
 :root{
     --color_text-primary: #AB29CA;
@@ -25,6 +51,9 @@
 
 }
 
+h1, h2, h3, p {
+    animation-delay: 0.5s;
+}
 
 header{
     width: 100%;
@@ -65,14 +94,11 @@ header.scroll {
 
 .logo img{
     width: 200px;
-    margin-top: 10px;
-
 }
 
 .menu {
     display: flex;
     align-items: center;
-    margin-right: 140px;
 }
 
 .menu nav{
@@ -100,27 +126,23 @@ header.scroll {
 
 }
 
-
-
-/* ESTILO INICIO DE SESIÓN */
-
-.btn__login {
-    display: inline-block;
+.btn__quote{
+    display: block;
+    padding: 8px 40px;
+    border: 3px solid #9A00BF; 
+    border-radius: 9px;
+    font-weight: 500;
     margin: 0px 20px;
-    cursor: pointer;
+    transition: all 300ms;
+    color: #AB29CA;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
 }
 
-.login-icon {
-    width: 45px; /* Ajusta el tamaño según sea necesario */
-    height: 45px;
-    vertical-align: middle;
-    transition: transform 300ms;
+.btn__quote:hover{
+    color: white;
+    background: var(--main_color-primary)
 }
-
-.btn__login:hover .login-icon {
-    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
-}
-
 
 .menu .socialMedia{
     margin: 0px 10px;
@@ -132,6 +154,83 @@ header.scroll {
 
 .menu .socialMedia img {
     width: 20px;
+}
+
+/* Estilos existentes... */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividad y menú desplegable */
+@media screen and (max-width: 768px) {
+    .container__header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .menu nav {
+        display: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .menu nav.active {
+        display: block;
+    }
+    .menu nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .menu nav ul li {
+        margin: 10px 0;
+    }
+    .menu .socialMedia {
+        margin-top: 15px;
+        justify-content: flex-start;
+    }
+    .btn__quote {
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+    .container__header {
+        padding: 0 10px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .menu nav ul li a {
+        font-size: 14px;
+    }
+    .btn__quote {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .menu .socialMedia img {
+        width: 18px;
+    }
 }
 
 
