@@ -673,7 +673,11 @@ header.scroll {
 
 
 
+aside {
+  display: block;
+  unicode-bidi: isolate;
 
+}
 
 
 
