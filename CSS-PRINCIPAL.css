@@ -553,7 +553,7 @@ header.scroll {
     width: 100%;
 }
 
-/* -------------------------------------------ANIMCACIÓN GENERAL----------------------------------------------- */
+/* -------------------------------------------ANIMACIÓN GENERAL----------------------------------------------- */
 .fade-in {
     opacity: 0;
     transform: translateY(40px) scale(0.95); /* Mayor desplazamiento inicial y reducción de escala */
@@ -611,6 +611,8 @@ header.scroll {
     padding: 20px;
     z-index: 1000;
     margin-top: 100px;
+    border-radius: 2px;
+
 }
 
 
