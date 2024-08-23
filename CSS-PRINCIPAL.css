@@ -605,19 +605,18 @@ header.scroll {
     right: -300px; /* Inicialmente oculta */
     width: 300px;
     height: 1010px;
-    background-color: #ededed;
+    background-color: #fff;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
     transition: right 0.3s ease;
     padding: 20px;
     z-index: 1000;
     margin-top: 100px;
-    border-radius: 2px;
 }
+
 
 .sidebar.open {
     right: 0; /* Muestra la barra lateral */
-    width: 370px;
-    height: 100%; 
+    width: 400px;
 
 }
 
@@ -653,7 +652,7 @@ header.scroll {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 290px; /* Tamaño fijo para el contenedor del producto */
+    width: 345px; /* Tamaño fijo para el contenedor del producto */
     height: 190px;
     margin: 10px auto; /* Centra el contenedor horizontalmente */
     padding: 10px;
@@ -670,14 +669,11 @@ header.scroll {
     align-items: center;
 }
 
-.cart-item-image-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 145px;
-  margin-right: 15px;
-}
+
+
+
+
+
 
 
 /* Contenedor para los detalles del producto */
@@ -698,7 +694,14 @@ header.scroll {
 
 
 /* Estilo del contenedor de la imagen dentro del carrito */
-
+.cart-item-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 145px;
+    margin-right: 15px;
+}
 
 /* Estilo del contenedor de la imagen */
 .cart-item-image-container {
