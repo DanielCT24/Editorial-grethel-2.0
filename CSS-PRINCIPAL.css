@@ -605,17 +605,19 @@ header.scroll {
     right: -300px; /* Inicialmente oculta */
     width: 300px;
     height: 1010px;
-    background-color: #fff;
+    background-color: #ededed;
     box-shadow: -2px 0 5px rgba(0,0,0,0.3);
     transition: right 0.3s ease;
     padding: 20px;
     z-index: 1000;
     margin-top: 100px;
+    border-radius: 2px;
 }
 
 .sidebar.open {
     right: 0; /* Muestra la barra lateral */
-    width: 350px;
+    width: 370px;
+    height: 100%; 
 
 }
 
