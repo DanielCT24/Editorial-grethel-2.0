@@ -414,6 +414,7 @@
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
+    margin-top: 40px;
 
 }
 
@@ -421,6 +422,7 @@
     font-size: var(--text_size_title);
     font-weight: 600;
     color: var(--color_text-secundary);
+    margin-bottom: 20px;
 }
 
 .container__box-cardPrimary{
