@@ -939,3 +939,37 @@ body{
 }    
 
 
+
+
+
+
+
+
+
+
+
+nav ul li a {
+    position: relative;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: #fff; /* Cambia esto según el color de tu diseño */
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #50026e; /* Cambia esto según el color de la línea que quieras */
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
