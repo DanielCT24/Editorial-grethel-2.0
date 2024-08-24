@@ -782,8 +782,9 @@ body{
 
 @media(max-width: 991px){
     .menu{
-        padding: 15px;
+        padding: 10px;
         justify-content: space-around;
+        text-align: center;
     }
 
     .menu-2{
