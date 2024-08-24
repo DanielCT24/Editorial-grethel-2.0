@@ -649,10 +649,11 @@ body{
     width: 0;
 }
 
-.logo-2{
+
+.logo-2 {
     width: 200px;
     position: fixed;
-    margin-top: 25px;
+    margin-top: 8px;
 }
 
 .socials{
