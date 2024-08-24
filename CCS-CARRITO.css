@@ -36,6 +36,8 @@
     padding: 20px;
     z-index: 1000;
     margin-top: 100px;
+    overflow-y: auto; /* Permitir que el contenido se desplace */
+    padding-bottom: 20px; /* Espacio adicional para evitar que el contenido se corte */
     visibility: hidden; /* Oculta el carrito de manera que no ocupa espacio */
 
 }
@@ -45,6 +47,8 @@
     right: 0; /* Muestra la barra lateral */
     width: 400px;
     visibility: visible; /* Muestra el carrito cuando está abierto */
+    top: 0; 
+    height: 100%;
 
 }
 
