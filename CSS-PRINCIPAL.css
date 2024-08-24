@@ -903,7 +903,7 @@ body{
     }
 
     .image__about {
-    width: 175px;
+    width: 150px;
     display: flex;
     flex-direction: column;
 }
