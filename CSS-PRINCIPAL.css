@@ -623,7 +623,9 @@ body{
     display: flex;
     justify-content: center;
     z-index: 1000;
-    background-color: #f3b6f9 ;
+    background-color: #f3b6f9;
+    width: 41000px;
+    height: 99px;
 }
 
 .navbar {
