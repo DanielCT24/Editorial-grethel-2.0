@@ -27,7 +27,7 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -1px;
+    right: 1px;
     width: 300px;
     height: 1010px;
     background-color: #fff;
