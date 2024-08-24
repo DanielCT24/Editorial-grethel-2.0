@@ -715,17 +715,7 @@ nav ul li a:hover::after {
 /* -------------------- CARRITO--------------------------- */
 /* Estilo para la barra lateral */
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Inicialmente oculta */
-    width: 300px;
-    height: 1010px;
-    background-color: #fff;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    transition: right 0.3s ease;
-    padding: 20px;
-    z-index: 1000;
-    margin-top: 100px;
+   display: none;
 }
 
 
