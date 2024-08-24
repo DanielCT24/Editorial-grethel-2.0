@@ -51,3 +51,36 @@ tabInputs.forEach(function(input) {
         thisSwiper.swiper.update();
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    const menu = document.querySelector('.menu');
+    const sticky = menu.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+        menu.classList.add('fixed');
+    } else {
+        menu.classList.remove('fixed');
+    }
+});
