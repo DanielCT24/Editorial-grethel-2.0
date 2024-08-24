@@ -25,80 +25,7 @@
 }
 
 
-header{
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 100;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #f3adff;
-}
 
-
-
-
-
-
-
-
-header.scroll {
-    background-color: white;  /* Fondo blanco cuando se desplaza */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra para destacar */
-}
-
-.container__header{
-    max-width: 1200px;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.logo img{
-    width: 200px;
-    margin-top: 10px;
-
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    margin-right: 140px;
-}
-
-.menu nav{
-    margin: 0px 20px;
-}
-
-.menu nav ul {
-    display: flex;
-}
-
-.menu nav ul li {
-    list-style: none;
-    margin: 20px 16px;
-}
-
-.menu nav ul li a{ 
-    color: black; /* EL TAMAÑO DE LA LETRA DONDE DICE INICIO, CONTACTO, ETC. */
-    font-size: 16px;
-    position: relative;
-}
-
-.menu nav ul li a:hover{
-    color: #630046; /* COLOR CUANDO PASO EL CURSOR */
-
-
-}
 
 
 
@@ -119,19 +46,6 @@ header.scroll {
 
 .btn__login:hover .login-icon {
     transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
-}
-
-
-.menu .socialMedia{
-    margin: 0px 10px;
-}
-
-.menu .socialMedia a{
-    margin: 0px 4px;
-}
-
-.menu .socialMedia img {
-    width: 20px;
 }
 
 
