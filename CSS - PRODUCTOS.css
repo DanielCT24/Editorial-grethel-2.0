@@ -545,21 +545,20 @@
 
 
 
-
 /* FOOTER------------- */
-
+/* Footer */
 .footer {
     background: linear-gradient(135deg, #4a148c 0%, #6a1b9a 100%);
     color: #fff;
     padding: 40px 20px;
     font-size: 0.875rem;
     border-top: 5px solid #ab47bc;
-    margin-top: 40px;
+    margin-top: 1px;
     text-align: center;
 }
 
 .footer-top {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -598,8 +597,6 @@
 
 .footer-text {
     margin: 5px 0;
-    margin-top: 10px;
-    text-align: center; /* Centra el texto horizontalmente */
 }
 
 .social-links {
@@ -607,7 +604,6 @@
     gap: 15px;
     margin-top: 10px;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .social-link {
@@ -633,7 +629,6 @@
     height: auto;
     width: auto;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .payment-icon {
@@ -646,11 +641,6 @@
     width: auto;
     height: 40px;
     transition: opacity 0.3s;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    margin-top: 10px;
 }
 
 .payment-icon:hover {
@@ -683,6 +673,7 @@
     color: #fff;
     text-decoration: underline;
 }
+
 
 /* -------------------------------------------ANIMCACIÓN HEADER----------------------------------------------- */
 
