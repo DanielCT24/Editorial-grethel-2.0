@@ -583,7 +583,6 @@ body{
 
 
 
-
 /* NUEVO HEADER */
 .container {
     max-width: 1200px;
@@ -626,26 +625,8 @@ body{
     display: flex;
     justify-content: center;
     z-index: 1000;
-    background-color: #f3b6f9;
-    width: 100%; /* Cambiado a 100% para que se ajuste al contenedor */
-    height: 99px;
-    transition: all 0.3s ease; /* Suaviza la transición al cambiar la posición */
 }
 
-.menu.fixed {
-    position: fixed; /* Cambia a posición fija al hacer scroll */
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #f3b6f9; /* Mantén el mismo color de fondo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para un mejor efecto */
-}
-
-.navbar {
-    padding: 10px 20px; /* Ajusta el espaciado interno del navbar */
-}
 .navbar {
     display: flex;
     align-items: center;
@@ -654,8 +635,6 @@ body{
 .menu-1{
     margin-right: 180px;
     margin-left: 270px;
-    background-color:#f3b6f9 ;
-
     
 }
 
@@ -669,11 +648,10 @@ body{
     width: 0;
 }
 
-
-.logo-2 {
+.logo-2{
     width: 200px;
     position: fixed;
-    margin-top: 8px;
+    margin-top: 25px;
 }
 
 .socials{
@@ -689,7 +667,7 @@ body{
 
 .menu .navbar ul li {
     position: relative;
-    margin-right: 0
+    float: left;
 }
 
 .menu .navbar ul li a {
@@ -725,7 +703,6 @@ body{
 
 .menu-icono {
     width: 25px;
-    margin-top: 20px
 }
 
 .menu label {
@@ -804,9 +781,8 @@ body{
 
 @media(max-width: 991px){
     .menu{
-        padding: 10px;
+        padding: 15px;
         justify-content: space-around;
-        text-align: center;
     }
 
     .menu-2{
@@ -822,7 +798,7 @@ body{
     }
 
     .login-icon{
-        margin-top: 0px;
+        margin-top: -20px;
     }
 
 
@@ -846,6 +822,7 @@ body{
 
     #menu:checked ~ .navbar {
         display: initial;
+        float: left;
     }
 
     .header-content {
@@ -893,11 +870,16 @@ body{
     .swiper-pagination-fraction {
         bottom: -7px;
     }
-
+    
+    .menu a {
+        float: left;
+    }
 
 
     .menu .navbar {
         text-align: center; /* Centra el contenido dentro del contenedor navbar */
+        display: none;
+        background-color:#f3b6f9 ;
     }
     
     .menu .navbar ul {
@@ -908,9 +890,11 @@ body{
     
     .menu .navbar ul li {
         display: block; /* Asegura que cada li esté en una nueva línea */
+        margin-right: 0
+
     }
     
-    .menu .navbar ul li a {
+    .menu .navbar ul li {
         font-size: 20px;
         padding: 25px;
         color: white;
@@ -927,20 +911,7 @@ body{
         margin-left: -60px;
     }
 
-    .image__about {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-}    
-
-
-
+  }
 
 
 
