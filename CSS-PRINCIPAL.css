@@ -168,15 +168,12 @@ body{
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
-    margin-top: 40px;
-
 }
 
 .text__card-primary h1{
     font-size: var(--text_size_title);
     font-weight: 600;
     color: var(--color_text-secundary);
-    margin-bottom: 20px;
 }
 
 .container__box-cardPrimary{
@@ -270,17 +267,17 @@ body{
 
 /* MAS SOBRE NOSTROS */
 .container__about{
-    padding: 50px;
+    padding: 100px;
     background: var(--background-color);
 }
 
 .about{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 .text__about{
@@ -305,7 +302,7 @@ body{
 }
 
 .image__about img{
-    width: 225px;
+    width: 300px;
 }
 
 .card__service {
@@ -579,6 +576,7 @@ body{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     border-color: #3700b3;
 }
+
 
 
 
@@ -911,7 +909,6 @@ body{
         margin-left: -60px;
     }
 
-  }
 
 
 
@@ -920,28 +917,7 @@ body{
 
 
 
-nav ul li a {
-    position: relative;
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    color: #fff; /* Cambia esto según el color de tu diseño */
-    padding: 10px;
-    display: inline-block;
-}
 
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background-color: #50026e; /* Cambia esto según el color de la línea que quieras */
-    left: 50%;
-    bottom: 0;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
+}    
 
 
