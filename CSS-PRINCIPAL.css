@@ -689,7 +689,7 @@ body{
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
+    margin-right: 0
 }
 
 .menu .navbar ul li a {
