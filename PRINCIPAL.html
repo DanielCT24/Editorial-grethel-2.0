@@ -6,35 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial Grethel</title>
-    <script src="GENERAL.JS"></script>
-    <script src="PRODUCTOS.JS"></script>
-    <script src="SEARCHBAR.JS"></script>
+    <script src="Principal.js"></script>
+    <link rel="stylesheet" href="Principal.css"></link>
     <link rel="stylesheet" href="CSS-PRINCIPAL.css"></link>
-     <link rel="stylesheet" href="CCS-CARRITO.css"></link>
+    <link rel="stylesheet" href="carrito.css"></link>
     <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ 
 
-   <script>
-        // JavaScript para cambiar el estilo del encabezado al hacer scroll
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('header');
-            
-            if (window.scrollY > 0) {
-                header.classList.add('scroll');
-            } else {
-                header.classList.remove('scroll');
-            }
-        });
-    </script>
+
+
 </head>
 
 <body>
 
 <!-- Header - menu -->
+
+
 <header>
     <div class="menu container ">
         <img class="logo-1 " src="/LOGO.png" alt="">
@@ -141,6 +133,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
  <!-- OFERTAS -->
 
  <div class="fade-in">
@@ -152,7 +168,7 @@
     <div class="trust card__primary">
         <div class="text__trust text__card-primary">
             <p> OFERTAS LIMITADAS </p>
-            <h1> Hasta el 03 de Octubre</h1>
+            <h1> Hasta el 02 de Octubre</h1>
         </div>
 
 
@@ -208,7 +224,7 @@
         <!-- Aquí se añadirá el contenido del carrito -->
     </div>
     <p id="totalPrice">Total: S/ 0</p>
-    <div class="cart-footer fade-in">
+    <div class="cart-footer">
         <button id="go-to-checkout">Ir a la Caja</button>
         <button id="empty-cart">Vaciar Carrito</button>
     </div>
@@ -219,9 +235,8 @@
   </div>
 </div>
 </section>
-
   <!-- SOBRE NOSOTROS -->
-
+  <div class="fade-in">
   <div class="container__about div_offset">
     <div class="about">
         <div class="text__about">
@@ -230,11 +245,16 @@
             <a href="#" class="btn__text-about btn__text">SABER MÁS</a>
         </div>
 
+        <div class="image__about">
+            <img src="HEADER Y BODY/Mockups/1.png" alt="">
+            <img src="HEADER Y BODY/Mockups/2.png" alt=""> 
+        </div>
     </div>
 
   </div>
 
 <!-- SERVICIOS, CATALOGO -->
+<div class="fade-in">
     <div class="container__service container__card-primary div_offset" id="catalogo">
         <div class="service card__primary">
             <div class="text__service text__card-primary">
@@ -269,7 +289,7 @@
                 <!-- HASTA ACA PARA AGREGAR EDITORIALES -->
                 <!-- EDITORIALES DISPONIBLES -->        
                 <div class="card__service box__card-primary">
-                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/Rodo.png" alt=""></a>
+                    <a href="-----------------"><img src="AÑADIR IMAGENES/EDITORIALES - PRINCIPIO/rodo.jpeg" alt=""></a>
                     <h2> Editorial Rodo</h2>
                     <p>Mira todos nuestros libros disponibles</p>
                     <a href="#">
@@ -381,10 +401,10 @@
 
 </footer>
     
+
+
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="Header.js"></script>
-
-
 </body>
 </html>
 
