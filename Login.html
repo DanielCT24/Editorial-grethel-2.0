@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial Grethel</title>
     <script src="GENERAL.JS"></script>
-    <script src="LOGIN.JS"></script>
+    <script src="PRODUCTOS.JS"></script>
+    <script src="SEARCHBAR.JS"></script>
     <link rel="stylesheet" href="CSS-PRINCIPAL.css"></link>
-    <link rel="stylesheet" href="CSS-LOGIN.css"></link>
+     <link rel="stylesheet" href="CCS-CARRITO.css"></link>
     <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
     <script>
         // JavaScript para cambiar el estilo del encabezado al hacer scroll
@@ -33,34 +35,44 @@
 
 <!-- Header - menu -->
 <header>
-    <div class="fade-in">
-    <div class="container__header" id="inicio">
-    
-        <div class="logo">
-        <a href="PRINCIPAL.html">
-            <img src="HEADER Y BODY/LOGO.png" alt="">
-        </a>
-        </div>
-        <div class="menu">
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="PRINCIPAL.html">INICIO</a></li>
-                    <li><a href="------------">CONTACTO</a></li>
-                    <li><a href="#ofertas">OFERTAS</a></li>
-                    <li><a href="#catalogo">CATÁLOGO</a></li>
-                    <li><a href="---------------">ENVÍOS</a></li>
-                </ul>
-            </nav>
+    <div class="menu container ">
+        <img class="logo-1 " src="HEADER Y BODY/LOGO.png" alt="">
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" class="menu-icono">
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="PRINCIPAL.html">Inicio</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="CATALOGO.html">Catálogo</a></li>
+                        <li><a href="ENVIOS.html">Envíos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <img class="logo-2" src="HEADER Y BODY/LOGO.png" alt="">
             <a href="Login.html" class="btn__login">
                 <img src="HEADER Y BODY/Imagen-Login.png" alt="Login" class="login-icon">
             </a>
 
 
-        </div>
-    </div>
-    </div>
-</header>
 
+        </nav>
+
+    </div>
+
+   
+    </div>
+
+    </div>
+
+</header>
 <main>
 
             <div class="contenedor__todo">
