@@ -676,7 +676,8 @@ body{
     display: block;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-right: 50px;
     
     
 }
@@ -820,7 +821,6 @@ body{
 
     #menu:checked ~ .navbar {
         display: initial;
-        float: left;
     }
 
     .header-content {
@@ -888,14 +888,14 @@ body{
     
     .menu .navbar ul li {
         display: block; /* Asegura que cada li esté en una nueva línea */
-        margin-right: 0
+        margin-right: 70px;
 
     }
     
     .menu .navbar ul li {
         font-size: 20px;
         padding: 25px;
-        color: white;
+        color: rgb(255, 255, 255);
         display: block; /* Permite que el padding funcione correctamente */
         text-transform: uppercase;
         font-weight: 500;
@@ -905,6 +905,19 @@ body{
     
 
 
+    .menu .navbar ul li a {
+
+        font-size: 20px;
+        padding: 25px;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-right: 90px;
+        
+        
+    }
     .containermenu{
         margin-left: -60px;
     }
