@@ -877,12 +877,11 @@ body{
     z-index: 1000;
 }
 
-.popup-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Se ajusta al contenedor sin cortarse */
+popup-image {
+    width: 1110px;
+    height: 900px;
+    object-fit: cover;
     border-radius: 10px;
-}
 
 .close-btn {
     position: absolute;
@@ -905,6 +904,8 @@ body{
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
+    height: 900px;
+
 }
 
 
