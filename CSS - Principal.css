@@ -725,11 +725,11 @@ body{
 }
 
 .logo-2{
-    width: 200px;
+    width: 160px;
     position: fixed;
     margin-top: 11px;
     margin-left: -980px;
-    margin-top: -35px;
+    margin-top: -60px;
 }
 
 .socials{
@@ -935,8 +935,10 @@ body{
     }
 
     .logo-1 {
-        width: 170px;
+        width: 120px;
+        margin-top: -29px;
     }
+}
 
     .logo-2{
         width: 0;
