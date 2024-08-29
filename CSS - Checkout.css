@@ -32,7 +32,7 @@ body {
 
 .containeritems {
     overflow-y: auto; /* Activa el desplazamiento vertical */
-    max-height: 550px; /* Establece la altura máxima donde el scroll comenzará */
+    max-height: 1200px; /* Establece la altura máxima donde el scroll comenzará */
     overflow-y: auto; /* Activa el desplazamiento vertical */
 }
 
