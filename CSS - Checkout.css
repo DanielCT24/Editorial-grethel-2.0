@@ -897,7 +897,7 @@ h4 {
 
  .containeritems {
     overflow-y: auto; /* Activa el desplazamiento vertical */
-    max-height: 335px; /* Establece la altura máxima donde el scroll comenzará */
+    max-height: 540px; /* Establece la altura máxima donde el scroll comenzará */
     overflow-y: auto; /* Activa el desplazamiento vertical */
 }
 
