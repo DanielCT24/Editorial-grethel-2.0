@@ -375,6 +375,8 @@ h4 {
         display: flex;
         flex-direction: column;
         margin-top: 116px;
+        height: 2335px;
+
     }
     .order-summary {
         padding: 1rem;
