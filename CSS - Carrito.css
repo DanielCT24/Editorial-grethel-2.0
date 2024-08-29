@@ -564,7 +564,7 @@
 
 /* Estilo para el contenedor del carrito */
 #cartItems {
-    max-height: 610px; /* Ajusta la altura máxima según sea necesario */
+    max-height: 450px;
     overflow-y: auto; /* Agrega la barra de desplazamiento vertical */
     padding: 10px;
     border: 1px solid #ddd;
