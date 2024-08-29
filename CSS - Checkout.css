@@ -307,11 +307,11 @@ a:hover {
 
 /* Imagen del producto */
 .item-image {
-    width: 120px; /* Tamaño configurable */
-    height: 120px; /* Tamaño configurable */
+    width: 120px; 
+    height: 145px;
     object-fit: cover;
     border-radius: 8px;
-    margin-left: 3rem; /* Espacio para el botón de eliminar */
+    margin-left: 3rem;
 }
 
 /* Contenedor de detalles del producto */
@@ -325,23 +325,23 @@ a:hover {
 
 /* Nombre del producto */
 .item-name {
-    font-size: 1.2rem; /* Tamaño configurable */
+    font-size: 1.2rem; 
     margin: 0;
     font-weight: 440;
 }
 
 /* Precio del producto */
 .item-price {
-    font-size: 1.1rem; /* Tamaño configurable */
+    font-size: 1.1rem; 
     color: #f49e00;
     font-weight: bold;
 }
 
 /* Campo de cantidad */
 .quantity-input {
-    width: 60px; /* Tamaño configurable */
+    width: 60px; 
     padding: 0.5rem;
-    font-size: 1rem; /* Tamaño configurable */
+    font-size: 1rem; 
     border: 1px solid #ddd;
     border-radius: 4px;
     text-align: center;
@@ -349,7 +349,7 @@ a:hover {
 
 /* Total del producto */
 .item-total {
-    font-size: 1.1rem; /* Tamaño configurable */
+    font-size: 1.1rem; 
     font-weight: bold;
     text-align: center;
     justify-content: center;
@@ -358,7 +358,7 @@ a:hover {
 
 /* Total del carrito */
 #summaryTotal {
-    font-size: 1.3rem; /* Tamaño configurable */
+    font-size: 1.3rem; 
     font-weight: bold;
     margin-top: 1rem;
 }
