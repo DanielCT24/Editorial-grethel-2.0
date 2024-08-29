@@ -1036,6 +1036,8 @@ body{
         margin-left: -110px; /* Elimina el margin predeterminado del ul */
         text-align: center;
         display: inline-block; /* Asegura que el ul se comporte como un elemento en línea */
+        MARGIN-LEFT: -140px;
+
     }
     
     .menu .navbar ul li {
