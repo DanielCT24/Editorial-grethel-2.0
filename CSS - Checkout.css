@@ -911,7 +911,9 @@ h4 {
     }
 
     .logo-1 {
-        width: 170px;
+        width: 150px;
+        margin-top: -55px;
+        margin-left: 20px;
     }
 
     .logo-2{
