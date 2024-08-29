@@ -934,9 +934,11 @@ body{
         display: none;
     }
 
+    
     .logo-1 {
-        width: 120px;
-        margin-top: -29px;
+        width: 130px;
+        margin-top: -45px;
+        margin-left: 30px;
     }
 
 
