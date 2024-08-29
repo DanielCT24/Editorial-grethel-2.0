@@ -29,6 +29,16 @@ body {
     gap: 40px;
 }
 
+
+.containeritems {
+    overflow-y: auto; /* Activa el desplazamiento vertical */
+    max-height: 550px; /* Establece la altura máxima donde el scroll comenzará */
+    overflow-y: auto; /* Activa el desplazamiento vertical */
+}
+
+
+
+
 .shipping-info, .order-summary {
     width: 50%;
 }
