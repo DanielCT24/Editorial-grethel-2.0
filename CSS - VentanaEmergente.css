@@ -43,3 +43,29 @@
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
 }
+
+
+@media(max-width: 991px){
+
+    .close-btn {
+    top: -12px;
+    margin-right: -20px; 
+    }
+
+
+    .popup {
+
+    height: auto;
+    width: 400px;
+    }
+
+    .popup-image {
+
+        width: 350px;
+        height: 295px
+    }
+
+
+
+    
+}
