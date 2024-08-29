@@ -448,7 +448,7 @@ h4 {
     .summary-item {
         display: flex;
         align-items: center;
-        width: 350px;
+        width: 320px;
         margin-left: -30px;
         padding: 0;
     }
@@ -897,7 +897,7 @@ h4 {
 
  .containeritems {
     overflow-y: auto; /* Activa el desplazamiento vertical */
-    max-height: 550px; /* Establece la altura máxima donde el scroll comenzará */
+    max-height: 335px; /* Establece la altura máxima donde el scroll comenzará */
     overflow-y: auto; /* Activa el desplazamiento vertical */
 }
 
