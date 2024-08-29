@@ -897,8 +897,8 @@ h4 {
         width: 0;
     }
 
-    .login-icon{
-        margin-top: 10px;
+      .login-icon{
+        margin-top: -56px;
     }
 
 
@@ -978,6 +978,7 @@ h4 {
     }
     .menu-icono {
       margin-top: 18px; 
+      margin-left: -20px;
      }
 
     .menu .navbar {
