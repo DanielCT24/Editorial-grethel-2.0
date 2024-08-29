@@ -46,7 +46,10 @@
     
 }
 
-
+.close-car {
+    margin-top: 11px;
+    margin-right: -14px;
+}
 
 /* Animación para cerrar el carrito */
 .sidebar.closing {
