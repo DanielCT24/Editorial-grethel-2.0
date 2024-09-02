@@ -39,11 +39,9 @@
 /* Muestra la barra lateral cuando está activa */
 .sidebar.open {
     width: 400px; /* Ancho al activarse */
-    height: auto;
+    height: 100%;
     visibility: visible;
     right: 0;
-
-    
 }
 
 .close-car {
@@ -259,12 +257,14 @@
 
 /* Estilo para el contenedor del carrito */
 #cartItems {
-    max-height: 800px; /* Ajusta la altura máxima según sea necesario */
+    max-height: 1000px; /* Ajusta la altura máxima según sea necesario */
     overflow-y: auto; /* Agrega la barra de desplazamiento vertical */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
+    height: auto;
+    /* position: fixed; */
 }
 
 /* Opcional: Estilo para la barra de desplazamiento */
@@ -645,17 +645,3 @@
 
 
 
-@media(max-width: 991px){
-
-
-.popup-image {
-    width: 300px;
-    height: 100%;
-    object-fit: contain; /* Se ajusta al contenedor sin cortarse */
-    border-radius: 10px;
-}
-    .close-btn {
-margin-top: -30px;
-margin-right: -19px; 
-}
-}
