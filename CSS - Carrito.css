@@ -645,3 +645,17 @@
 
 
 
+@media(max-width: 991px){
+
+
+.popup-image {
+    width: 300px;
+    height: 100%;
+    object-fit: contain; /* Se ajusta al contenedor sin cortarse */
+    border-radius: 10px;
+}
+    .close-btn {
+margin-top: -30px;
+margin-right: -19px; 
+}
+}
