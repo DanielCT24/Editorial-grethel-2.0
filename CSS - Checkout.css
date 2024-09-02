@@ -233,6 +233,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     background-color: #f9f9f9;
+    WIDTH: 569PX;
 }
 
 .delivery-option input[type="radio"] {
@@ -713,9 +714,8 @@ h4 {
 
 .menu-1{
     margin-right: 30px;
-    margin-left: 310px;
+    margin-left: 308px;
     width: 1000px;
-    
 }
 
 .menu-2{
@@ -733,7 +733,7 @@ h4 {
     position: absolute;
     margin-top: 11px;
     margin-left: -1080px;
-    margin-top: -76px;
+    margin-top: -33px;
 }
 
 .socials{
@@ -873,11 +873,10 @@ h4 {
     }
     
     .menu{
-        padding: 25px 25px 2px 17px;;
+        padding: 25px 25px 2px 17px;
         justify-content: space-around;
-        margin-left: 12px;
+        margin-left: 14px;
         margin-top: 1px;
-
     }
 
 
@@ -912,7 +911,7 @@ h4 {
 
     .logo-1 {
         width: 150px;
-        margin-top: -55px;
+        margin-top: -2px;
         margin-left: 20px;
     }
 
@@ -927,8 +926,7 @@ h4 {
 
     .menu label {
         display: initial;
-        margin-left: 90px;
-        
+        margin-left: 104px;
     }
 
     .menu .navbar {
