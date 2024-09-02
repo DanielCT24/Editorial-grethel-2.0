@@ -18,6 +18,10 @@ body {
     padding: 10px;
 }
 
+div#summaryItems {
+    max-height: 1300px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
