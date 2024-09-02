@@ -399,9 +399,9 @@ h4 {
         border-radius: 8px;
         position: relative;
         width: 00px;
-        margin-top: -17px;
+        margin-top: -51px;
+        margin-left: -11px;
         width: 340px;
-
     }
 
     .delivery-date {
@@ -523,7 +523,7 @@ h4 {
 
 
     button{
-        width: 240px;
+        width: 100%;
     }
 
     #summaryTotal {
