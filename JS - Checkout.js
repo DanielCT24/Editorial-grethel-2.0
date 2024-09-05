@@ -427,7 +427,7 @@ function finalizePurchase(event) {
     
     // Redirige después de 5 segundos
     setTimeout(() => {
-        window.location.href = "HTML - Usuario.html"; // Cambia "Usuario.html" por el archivo al que deseas redirigir
+        window.location.href = "Usuario.html"; // Cambia "Usuario.html" por el archivo al que deseas redirigir
     }, 5000); // Redirige después de 5 segundos
 }
 
@@ -441,8 +441,7 @@ function closePopup(popupId) {
     document.getElementById(popupId).style.display = 'none';
 }
 
-// Agrega el event listener al botón de finalizar compra
-document.getElementById('finalize-btn').addEventListener('click', finalizePurchase);
+
 
 // Validación de formulario y habilitación del botón
 document.getElementById('operacion').addEventListener('input', validateForm);
