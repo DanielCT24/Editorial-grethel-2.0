@@ -468,7 +468,7 @@ function finalizePurchase(mensajePersonalizado) {
         // Cerrar el modal después de 5 segundos
         setTimeout(() => {
             closeModal();
-        }, 9000); // 5000 milisegundos = 5 segundos
+        }, 11000); // 5000 milisegundos = 5 segundos
     }
     
     function closeModal() {
