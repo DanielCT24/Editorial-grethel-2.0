@@ -417,31 +417,6 @@ document.getElementById('phone').addEventListener('input', function() {
 
 
 
-// Función para finalizar la compra
-function finalizePurchase(event) {
-    // Evita el comportamiento predeterminado del formulario
-    event.preventDefault();
-    
-    // Mostrar la animación de éxito
-    openPopup('success-popup');
-    
-    // Redirige después de 5 segundos
-    setTimeout(() => {
-        window.location.href = "Usuario.html"; // Cambia "Usuario.html" por el archivo al que deseas redirigir
-    }, 5000); // Redirige después de 5 segundos
-}
-
-// Función para abrir la ventana emergente
-function openPopup(popupId) {
-    document.getElementById(popupId).style.display = 'block';
-}
-
-// Función para cerrar la ventana emergente
-function closePopup(popupId) {
-    document.getElementById(popupId).style.display = 'none';
-}
-
-
 
 // Validación de formulario y habilitación del botón
 document.getElementById('operacion').addEventListener('input', validateForm);
@@ -469,11 +444,35 @@ function obtenerPrecio() {
     return document.getElementById('summaryTotal1').textContent;
 }
 
-function finalizePurchase() {
+
+
+
+
+/* mensaje personalizado */
+
+
+function finalizePurchase(mensajePersonalizado) {
     const nuevoID = generarID();
     const fechaActual = obtenerFechaActual();
     const precio = obtenerPrecio();
     let datosGenerados = JSON.parse(localStorage.getItem('datosGenerados')) || [];
     datosGenerados.push({ id: nuevoID, fecha: fechaActual, precio: precio });
     localStorage.setItem('datosGenerados', JSON.stringify(datosGenerados));
+    showModal(mensajePersonalizado || `¡Felicidades por tu compra!`);
+
+
+    function showModal(message) {
+        document.getElementById('modalMessage').textContent = message;
+        document.getElementById('customModal').style.display = 'block';
+    
+        // Cerrar el modal después de 5 segundos
+        setTimeout(() => {
+            closeModal();
+        }, 9000); // 5000 milisegundos = 5 segundos
+    }
+    
+    function closeModal() {
+        document.getElementById('customModal').style.display = 'none';
+    }
+    
 }
