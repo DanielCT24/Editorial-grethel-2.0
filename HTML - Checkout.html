@@ -23,6 +23,8 @@
 
 <body>
 
+
+
 <!-- Header - menu -->
 
 <header>
@@ -391,33 +393,33 @@
                 </div>
 
                 <div class="delivery-container">
-                    <label for="email">SELECCIONE UNA OPCIÓN DE ENVÍO DELIVERY
-                    </label>
-            
+                    <label for="delivery">SELECCIONE UNA OPCIÓN DE ENVÍO DELIVERY</label>
+                    
                     <div class="delivery-option" required>
                         <label>
-                            <input type="radio" name="delivery" value="marvisur">
+                            <input type="radio" name="delivery" value="marvisur" required>
                             Marvisur <span class="info-icon"> 🚚  </span>
                         </label>
                         <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
                     
-                    <div class="delivery-option">
+                    <div class="delivery-option" required>
                         <label>
-                            <input type="radio" name="delivery" value="marvisur">
+                            <input type="radio" name="delivery" value="olvacourier" required>
                             OlvaCourier <span class="info-icon"> 🚚  </span>
                         </label>
                         <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
-            
-                    <div class="delivery-option">
-                        <label class="delivery-agency">
-                           <div class="delivery-agency"> <input type="radio" name="delivery" value="shalom">
-                            Shalom <span class="info-icon"> 🚚 </span></div>
+                    
+                    <div class="delivery-option" required>
+                        <label>
+                            <input type="radio" name="delivery" value="shalom" required>
+                            Shalom <span class="info-icon"> 🚚 </span>
                         </label>
                         <span class="delivery-date">Tu pedido llegará entre el 30-08-2024 y 02-09-2024</span>
                     </div>
                 </div>
+                
 
 
 
@@ -512,16 +514,27 @@
         <input type="file" id="comprobante" class="input-file" onchange="handleFileUpload()">
         <label for="comprobante" class="upload-btn" id="upload-label">📎 Adjuntar comprobante</label>
 
-        <button id="finalize-btn" class="finalize-btn" disabled onclick="finalizePurchase()">Finalizar</button>
+        <button id="finalize-btn" class="finalize-btn" disabled onclick="finalizePurchase('¡Tu compra ha sido exitosa!')">Finalizar</button>
     </div>
     
 
 
-    <div id="message-container" class="hidden">
-        <span id="message-text">¡Felicidades por tu compra!</span>
+<!-- Modal -->
+<div id="customModal" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="custom-close" onclick="closeModal()">&times;</span>
+        <div class="custom-modal-body">
+            <div class="checkmark-wrapper">
+                <div class="checkmark-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20.285 6.711l-11.504 11.39-5.393-5.428-1.456 1.458 6.85 6.938 12.963-12.846-1.456-1.464z"/>
+                    </svg>
+                </div>
+            </div>
+            <p id="modalMessage">¡Felicidades por tu compra!</p>
+        </div>
     </div>
-    
-    
+</div>
 
 
 
@@ -566,7 +579,10 @@
             </div>
         </div>
 
+
+        
     </div>
+
     <script src="JS - Checkout.js"></script>
     <script src="JS - Checkout2.js"></script>
     <script src="JS - Principal.js"></script>
