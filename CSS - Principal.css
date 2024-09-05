@@ -1401,3 +1401,16 @@ h3#userName1 {
 .hidden {
     display: none;
 }
+
+
+
+
+
+
+@media(max-width: 991px){
+    h3#userName2 {
+display: none;
+    }
+    
+}
+
