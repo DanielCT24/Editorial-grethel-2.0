@@ -576,8 +576,7 @@ h4 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 180px;
-    
+    margin-top: 65px;
 }
 
 .swiper-button-prev::after {
@@ -609,7 +608,7 @@ h4 {
 
 
 .menu {
-    position: FIXED;
+    /* position: FIXED; */
     top: 20px;
     left: 0;
     right: 0;
@@ -624,9 +623,8 @@ h4 {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    position: fixed;
-
-
+    MARGIN-LEFT: 10PX;
+    /* position: fixed; */
 }
 
 .menu-1{
@@ -649,7 +647,7 @@ h4 {
 
 .logo-2{
     width: 231px;
-    position: fixed;
+    /* position: fixed; */
     margin-top: 11px;
     margin-left: -869px;
     margin-top: -1px;
@@ -673,15 +671,23 @@ h4 {
 
 .menu .navbar ul li a {
 
-    font-size: 20px;
-    padding: 25px;
-    color: white;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px;
-    
-    
+font-size: 20px;
+
+padding: 25px;
+
+color: white;
+
+display: block;
+
+text-transform: uppercase;
+
+font-weight: 500;
+
+letter-spacing: 2px;
+
+margin-top: 38px;
+
+margin-left: -2px;
 }
 
 
@@ -1133,8 +1139,9 @@ h3#userName1 {
     cursor: pointer;
     align-items: center;
     text-align: center;
-    position: fixed;
-    margin-left: 79px;
+    /* position: fixed; */
+    margin-left: 734px;
+    margin-top: 11px;
 }
 
 
@@ -1627,4 +1634,103 @@ button#validateCoupon:hover {
 .show {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
+}
+
+
+
+
+
+/* MENSAJE PERSONALIZADO */
+
+
+/* The Modal (background) */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    animation: fadeIn 0.5s ease-out; /* Fade-in animation */
+}
+
+/* Modal Content */
+.custom-modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* 15% from top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Shadow effect */
+    position: relative; /* Ensure close button is positioned correctly */
+    text-align: center; /* Center the text */
+}
+
+/* Close Button */
+.custom-close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Checkmark Animation */
+.checkmark-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkmark-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #4CAF50; /* Green background */
+    border-radius: 50%; /* Circular background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: checkmarkScale 0.5s ease;
+}
+
+.checkmark-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: #fff;
+    stroke-width: 2px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: checkmarkDraw 0.5s ease;
+}
+
+@keyframes checkmarkScale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmarkDraw {
+    0% {
+        stroke-dasharray: 80;
+        stroke-dashoffset: 80;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
