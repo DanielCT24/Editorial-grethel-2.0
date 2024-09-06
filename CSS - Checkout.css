@@ -576,7 +576,7 @@ h4 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: -9px;
 }
 
 .swiper-button-prev::after {
@@ -847,7 +847,7 @@ margin-left: -2px;
 
     .logo-1 {
         width: 135px;
-        margin-top: 41px;
+        margin-top: 16px;
         margin-left: 20px;
     }
 
@@ -936,7 +936,7 @@ margin-left: -2px;
         margin-top: 2px;
     }
     .menu-icono {
-      margin-top: 57px;
+      margin-top: 31px;
       margin-left: -2px;
       /* margin-right: 7px; */
      }
@@ -1153,7 +1153,7 @@ h3#userName1 {
     width: 35px; /* Ajusta el tamaño según sea necesario */
     height: 35px;
     vertical-align: middle;
-    margin-top: 47px;
+    margin-top: 15px;
     margin-left: 96px;
     transition: transform 300ms;
     align-items: center;
