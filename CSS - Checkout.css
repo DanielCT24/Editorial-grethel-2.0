@@ -574,10 +574,9 @@ h4 {
 
 /* NUEVO HEADER */
 .container {
-    width: 428px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 65px;
+    margin-top: 20px;
 }
 
 .swiper-button-prev::after {
@@ -711,7 +710,7 @@ margin-left: -2px;
 }
 
 .menu-icono {
-    width: 22px;
+    width: 26px;
 }
 
 .menu label {
@@ -847,8 +846,9 @@ margin-left: -2px;
     }
 
     .logo-1 {
-        width: 130px;
-        margin-top: 5px;
+        width: 135px;
+        margin-top: 41px;
+        margin-left: 20px;
     }
 
     .logo-2{
@@ -933,12 +933,12 @@ margin-left: -2px;
     .menu a {
         float: left;
         margin-left: -15px;
-        margin-top: 0px;
+        margin-top: 2px;
     }
     .menu-icono {
-      margin-top: 18px;
-      margin-left: 32px;
-      margin-right: 50px;
+      margin-top: 57px;
+      margin-left: -2px;
+      /* margin-right: 7px; */
      }
 
     .menu .navbar {
@@ -1122,8 +1122,9 @@ h3#userName2 {
 h3#userName1 {
     font-size: 8.5px;
     width: 80px;
+    margin-left: 95px;
+    margin-top: 7px;
     text-transform: uppercase;
-
 }
 
 
@@ -1152,6 +1153,8 @@ h3#userName1 {
     width: 35px; /* Ajusta el tamaño según sea necesario */
     height: 35px;
     vertical-align: middle;
+    margin-top: 47px;
+    margin-left: 96px;
     transition: transform 300ms;
     align-items: center;
 }
