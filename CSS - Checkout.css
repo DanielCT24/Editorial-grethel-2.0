@@ -826,7 +826,7 @@ margin-left: -2px;
 @media (max-width: 991px) {
     .popup {
         width: 95%;  /* Más ancho para pantallas pequeñas */
-        max-width: 350px; /* Limitar el tamaño máximo en pantallas pequeñas */
+        /* max-width: 350px; */ /* Limitar el tamaño máximo en pantallas pequeñas */
     }
 
     .close-btn {
