@@ -576,7 +576,7 @@ h4 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 65px;
+    /* margin-top: 65px; */
 }
 
 .swiper-button-prev::after {
