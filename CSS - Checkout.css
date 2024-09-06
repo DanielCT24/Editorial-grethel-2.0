@@ -574,7 +574,8 @@ h4 {
 
 /* NUEVO HEADER */
 .container {
-    max-width: 1200px;
+    width: 428px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 65px;
 }
