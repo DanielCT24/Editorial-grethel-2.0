@@ -15,7 +15,7 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #f3b6f9;
     margin: 0;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 div#summaryItems {
@@ -577,6 +577,7 @@ h4 {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 221px;
+    margin-bottom: 27px;
 }
 
 .swiper-button-prev::after {
@@ -1751,11 +1752,4 @@ button#validateCoupon:hover {
 a.btn__login {
     margin-top: 6px;
     margin-left: 46px;
-}
-
-
-img.pagoyape-img {
-    height: 87px;
-    width: 120px;
-    margin-left: 10px;
 }
