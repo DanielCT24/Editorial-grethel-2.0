@@ -189,9 +189,9 @@ textarea {
 }
 
 .payment-methods img {
-    height: 87px;
-    width: 122px;
-    margin-left: 10px;
+    height: 39px;
+    width: 52px;
+    /* margin-left: 10px; */
 }
 
 button {
@@ -1756,4 +1756,9 @@ button#validateCoupon:hover {
 a.btn__login {
     margin-top: 6px;
     margin-left: 68px;
+}
+img.pagoyape-img {
+    height: 87px;
+    width: 120px;
+    margin-left: 10px;
 }
