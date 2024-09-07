@@ -40,7 +40,11 @@ div#summaryItems {
     /* overflow-y: auto; */ /* Activa el desplazamiento vertical */
 }
 
-
+img.pagoyape-img {
+    height: 87px;
+    width: 120px;
+    margin-left: 10px;
+}
 
 
 .shipping-info, .order-summary {
