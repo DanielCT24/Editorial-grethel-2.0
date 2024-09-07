@@ -430,10 +430,10 @@ body{
 .footer {
     background: linear-gradient(135deg, #4a148c 0%, #6a1b9a 100%);
     color: #fff;
-    padding: 40px 20px;
+    padding: 52px 0px;
     font-size: 0.875rem;
     border-top: 5px solid #ab47bc;
-    margin-top: 1px;
+    margin-top: 18px;
     text-align: center;
 }
 
@@ -482,7 +482,7 @@ body{
 .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 17px;
     justify-content: center;
 }
 
@@ -1426,5 +1426,5 @@ display: none;
 
 
 img.imagenes {
-    margin-top: 12px;
+    margin-top: 6px;
 }
