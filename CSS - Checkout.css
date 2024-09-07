@@ -649,7 +649,7 @@ h4 {
     width: 239px;
     /* position: fixed; */
     margin-top: 11px;
-    margin-left: -869px;
+    margin-left: -885px;
     margin-top: 30px;
 }
 
@@ -1750,5 +1750,5 @@ button#validateCoupon:hover {
 
 a.btn__login {
     margin-top: 6px;
-    margin-left: 46px;
+    margin-left: 68px;
 }
