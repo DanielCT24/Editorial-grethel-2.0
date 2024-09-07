@@ -1755,7 +1755,7 @@ button#validateCoupon:hover {
 }
 
 a.btn__login {
-    margin-top: 6px;
+    margin-top: 46px;
     margin-left: 68px;
 }
 img.pagoyape-img {
@@ -2018,7 +2018,8 @@ img.pagoyape-img {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 198px;
+    margin-top: 201px;
+    margin-bottom: 42px;
 }
 
 
@@ -2038,6 +2039,7 @@ img.pagoyape-img {
         margin-top: 116px;
         max-height: 2335px;
         margin-top: 162px;
+        margin-bottom: 31px;
     }
 }
 
@@ -2107,7 +2109,7 @@ img.pagoyape-img {
     position: fixed;
     margin-top: 11px;
     margin-left: -980px;
-    margin-top: -35px;
+    margin-top: -21px;
 }
 
 .socials{
