@@ -846,8 +846,9 @@ margin-left: -2px;
     }
 
     .logo-1 {
-        width: 130px;
-        margin-top: 5px;
+        width: 144px;
+        margin-top: 19px;
+        margin-left: 25px;
     }
 
     .logo-2{
@@ -935,9 +936,9 @@ margin-left: -2px;
         margin-top: 0px;
     }
     .menu-icono {
-      margin-top: 18px;
-      margin-left: 32px;
-      margin-right: 50px;
+      margin-top: 27px;
+      margin-left: 21px;
+      /* margin-right: 50px; */
      }
 
     .menu .navbar {
@@ -1743,4 +1744,9 @@ button#validateCoupon:hover {
         margin-top: 160px;
     }
 
+}
+
+a.btn__login {
+    margin-top: 11px;
+    margin-left: 46px;
 }
