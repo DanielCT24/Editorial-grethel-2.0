@@ -970,7 +970,7 @@ body{
     #menu:checked ~ .navbar {
         display: initial;
         margin-left: -12px;
-        width: 430px;
+        width: 450px;
         margin-top: -6px;
     }
 
@@ -1033,7 +1033,7 @@ body{
     .menu .navbar {
         text-align: center; /* Centra el contenido dentro del contenedor navbar */
         display: none;
-        background-color:#f3b6f9 ;
+        background-color: #f3adff;
     }
     
     .menu .navbar ul {
@@ -1869,6 +1869,7 @@ display: none;
     }
     header {
         height: 147px;
+        z-index: 1000;
     }
 
     .container__card-primary {
