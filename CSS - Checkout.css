@@ -386,7 +386,7 @@ h4 {
 
 
     .container {
-        width: 397px;
+        width: 416px;
         margin: 0 auto;
         background-color: #fff;
         padding: 30px;
@@ -397,7 +397,7 @@ h4 {
         flex-direction: column;
         margin-top: 116px;
         max-height: 2335px;
-
+        margin-top: 11px;
     }
     .order-summary {
         padding: 1rem;
@@ -576,7 +576,7 @@ h4 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* margin-top: 65px; */
+    margin-top: 221px;
 }
 
 .swiper-button-prev::after {
@@ -1140,8 +1140,8 @@ h3#userName1 {
     align-items: center;
     text-align: center;
     /* position: fixed; */
-    margin-left: 734px;
-    margin-top: 11px;
+    margin-left: 975px;
+    margin-top: -75px;
 }
 
 
@@ -1224,8 +1224,8 @@ h3#userName1 {
     height: 55px;
     vertical-align: middle;
     transition: transform 300ms;
+    margin-top: -6px;
     align-items: center;
-
 }
 
 .btn__login:hover .login-icon {
@@ -1737,3 +1737,10 @@ button#validateCoupon:hover {
 
 
 
+@media(max-width: 991px){
+
+    .container {
+        margin-top: 160px;
+    }
+
+}
