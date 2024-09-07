@@ -505,7 +505,7 @@ h4 {
         font-family: Poppins, sans-serif;
         background-color: #f3b6f9;
         margin: 0;
-        padding: 10px 0px;
+        padding: 0px 0px;
     }
 
     .item-image {
@@ -846,7 +846,7 @@ margin-left: -2px;
     }
 
     .logo-1 {
-        width: 144px;
+        width: 148px;
         margin-top: 19px;
         margin-left: 25px;
     }
@@ -882,6 +882,7 @@ margin-left: -2px;
     #menu:checked ~ .navbar {
         display: initial;
         margin-left: -12px;
+        margin-top: -23px;
     }
 
     .header-content {
@@ -936,7 +937,7 @@ margin-left: -2px;
         margin-top: 0px;
     }
     .menu-icono {
-      margin-top: 27px;
+      margin-top: 36px;
       margin-left: 21px;
       /* margin-right: 50px; */
      }
@@ -1742,11 +1743,12 @@ button#validateCoupon:hover {
 
     .container {
         margin-top: 160px;
+        margin-bottom: 64px;
     }
 
 }
 
 a.btn__login {
-    margin-top: 11px;
+    margin-top: 6px;
     margin-left: 46px;
 }
