@@ -185,9 +185,9 @@ textarea {
 }
 
 .payment-methods img {
-    height: 87px;
-    width: 122px;
-    margin-left: 10px;
+    height: 39px;
+    width: 49px;
+    /* margin-left: 10px; */
 }
 
 button {
@@ -1741,14 +1741,6 @@ button#validateCoupon:hover {
 
 @media(max-width: 991px){
 
-.payment-methods img {
-    height: 70px;
-    width: 100px;
-    margin-left: 10px;
-}
-    
-
-    
     .container {
         margin-top: 160px;
         margin-bottom: 64px;
@@ -1760,3 +1752,5 @@ a.btn__login {
     margin-top: 6px;
     margin-left: 46px;
 }
+
+
