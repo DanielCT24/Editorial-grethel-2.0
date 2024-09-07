@@ -15,7 +15,7 @@ body {
     font-family: Poppins, sans-serif;
     background-color: #f3b6f9;
     margin: 0;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 div#summaryItems {
@@ -185,9 +185,9 @@ textarea {
 }
 
 .payment-methods img {
-    height: 39px;
-    width: 49px;
-    /* margin-left: 10px; */
+    height: 87px;
+    width: 122px;
+    margin-left: 10px;
 }
 
 button {
@@ -577,7 +577,6 @@ h4 {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 221px;
-    margin-bottom: 27px;
 }
 
 .swiper-button-prev::after {
@@ -624,7 +623,7 @@ h4 {
     display: flex;
     align-items: center;
     max-width: 1200px;
-    MARGIN-LEFT: 10PX;
+    MARGIN-LEFT: 4PX;
     /* position: fixed; */
 }
 
@@ -647,11 +646,11 @@ h4 {
 }
 
 .logo-2{
-    width: 231px;
+    width: 239px;
     /* position: fixed; */
     margin-top: 11px;
     margin-left: -869px;
-    margin-top: -1px;
+    margin-top: 30px;
 }
 
 .socials{
@@ -686,9 +685,9 @@ font-weight: 500;
 
 letter-spacing: 2px;
 
-margin-top: 38px;
+margin-top: 35px;
 
-margin-left: -2px;
+margin-left: -1px;
 }
 
 
