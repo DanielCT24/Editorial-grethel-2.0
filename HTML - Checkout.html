@@ -1,22 +1,22 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Checkout </title>
-    <link rel="stylesheet" href="CSS - Checkout.css">
-    <link rel="stylesheet" href="CSS - Principal.css">
-    <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
+    <title> Editorial Grethel</title>
     <script src="JS - Principal.js"></script>
+    <script src="JS - Carrito.js"></script>
+    <link rel="stylesheet" href="CSS - Principal.css"></link>
+    <link rel="stylesheet" href="CSS - Carrito.css"></link>
+    <link rel="stylesheet" href="CSS - Checkout.css">
+    <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/21bc0e3a65.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
  
 
 
@@ -27,7 +27,16 @@
 
 
 
-<!-- Header - menu -->
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Header - menu -->
@@ -38,7 +47,7 @@
         <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" alt=""></a>
         <input type="checkbox" id="menu">
         <label for="menu">
-            <img src="images-20240823T213518Z-001/images/menu.png" class="menu-icono">
+            <img src="HEADER Y BODY/menu.png" class="menu-icono">
 
 
 
@@ -89,19 +98,20 @@
 
 
 
-¿
+            <a href="HTML - Checkout.html" class="btn__carrito">
+                <img src="CARRITO.png" alt="carrito" class="login-carrito-header">
+            </a>
+
 
 
         </nav>
 
 
     </div>
-    </header>
+</header>
 
 
-
-
-
+   
 
 
 <main>
@@ -605,5 +615,100 @@
     <script src="JS - Usuario.js"></script>
     <script src="JS - Usuario-Login.js"></script>
 </main>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Ubicación</h3>
+                <p class="footer-text">Mercado Sur 125,</p><p> Huacho 15136</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title" id="contacto">Contacto</h3>
+                <p class="footer-text">Email: editorialgrethel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61563910384955f" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.link/r2qn7g" class="social-link" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Calificación</h3>
+                <img src="AÑADIR IMAGENES/FOOTER/Estrellas.png" alt="Estrellas" class="imagenes">
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Pagos</h3>
+                <div class="payment-methods">
+                    <img src="AÑADIR IMAGENES/FOOTER/visa.jpg" alt="Visa" class="payment-icon">
+                    <img src="AÑADIR IMAGENES/FOOTER/paypal.jpeg" alt="Paypal" class="payment-icon">
+                    <img src="BANCAMOVIL.png" alt="PagoEfectivo" class="payment-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2024 Editorial Grethel. Todos los derechos reservados.</p>
+
+        </div>
+    </div>
+
+</footer>
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="JS - Header.js"></script>
+<script src="JS - Usuario.js"></script>
+<script src="VentanaEmergente.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
+
+
+
+<!-- REUTILIZAR TAMAÑOS, POR EJEMPLO, BTN_TEXT LO PUEDO USAR EN BTN_TEXT-ABOUT, ES DECIR LO MISMO PUEDO HACER CON LAS IMAGES -->
