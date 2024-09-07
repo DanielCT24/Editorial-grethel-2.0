@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lumbreras | Editorial Grethel</title>
     <script src="GENERAL.JS"></script>
-    <script src="PRODUCTOS.JS"></script>
-    <link rel="stylesheet" href="CCS - EDITORIALES.css"></link>
+    <script src="JS - Usuario.js"></script>
+    <script src="JS - Productos.JS"></script>
+    <link rel="stylesheet" href="CSS - EDITORIALES.css"></link>
     <link rel="icon" sizes="180x180" href="ICON/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
@@ -31,35 +32,72 @@
 
 <body>
 
+
 <!-- Header - menu -->
+
+
 <header>
-    <div class="fade-in">
-    <div class="container__header" id="inicio">
+    <div class="menu ">
+        <a href="Inicio.html"><img class="logo-1 " src="LOGO.png" loading="lazy" alt=""></a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <img src="HEADER Y BODY/menu.png" loading="lazy" class="menu-icono">
+
+
+
     
-        <div class="logo">
-        <a href="PRINCIPAL.html">
-            <img src="HEADER Y BODY/LOGO.png" alt="">
-        </a>
-        </div>
-        <div class="menu">
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="PRINCIPAL.html">INICIO</a></li>
-                    <li><a href="------------">CONTACTO</a></li>
-                    <li><a href="#ofertas">OFERTAS</a></li>
-                    <li><a href="#catalogo">CATÁLOGO</a></li>
-                    <li><a href="---------------">ENVÍOS</a></li>
-                </ul>
-            </nav>
-            <a href="HTML/Login.html" class="btn__login">
-                <img src="HEADER Y BODY/Imagen-Login.png" alt="Login" class="login-icon">
+            <a href="HTML - Usuario.html" class="btn__login">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon">
+                <h3 id="userName1">Nombre del Usuario</h3>
+            </a>
+            
+
+
+
+ 
+
+        </label>
+
+        <nav class="navbar fade-in">
+            <div class="menu-1 fade-in">
+                <div class="containermenu">
+                
+                    <ul>
+                        <li><a href="Inicio.html">Inicio</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Envío</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+<!-------------------------------------------------- PC --------------->
+
+            <a href="Inicio.html"><img class="logo-2"  src="LOGO.png"  loading="lazy" alt=""></a>
+            
+
+
+
+            <a href="HTML - Usuario.html" class="btn__login" id="loginButton">
+                <img src="Imagen-Login.png" alt="Login" loading="lazy" class="login-icon-header">
+                <h3 id="userName2">Nombre del Usuario</h3>
+
             </a>
 
 
-        </div>
-    </div>
+
+
+
+
+        </nav>
+
+
     </div>
 </header>
+
 
 <main>
 
