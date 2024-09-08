@@ -433,7 +433,7 @@ body{
     padding: 52px 0px;
     font-size: 0.875rem;
     border-top: 5px solid #ab47bc;
-    margin-top: 18px;
+    /* margin-top: 18px; */
     text-align: center;
 }
 
@@ -1267,7 +1267,7 @@ body{
         opacity: 1;
         visibility: visible;
         transform: translate(-50%, -50%) scale(1);
-        width: 50%;
+        width: 80%;
         height: 181px;
     }
     .footer {
